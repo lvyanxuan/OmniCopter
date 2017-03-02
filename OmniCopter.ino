@@ -65,14 +65,11 @@ void loop()
 //	omniCopter.desiredBodyRate.pitchRate=0;
 //	omniCopter.desiredBodyRate.yawRate=0;
 	omniCopter.attitudeProcess();
-
+	omniCopter.cleanAngleErrorCollection();
 
 	for (int i=0; i <= config.INNER_OUTER_RATIO; i++) {
-    if (i == config.INNER_OUTER_RATIO) {
-      omniCopter.cleanAngleErrorCollection();
-    } else {
-      omniCopter.collectAngleError();
-    }
+
+    omniCopter.collectAngleError();
 
 		omniCopter.bodyRateProcess();
 		omniCopter.positionProcess();

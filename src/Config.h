@@ -53,7 +53,15 @@
 #define ESC_OFFSET_7 -16	//电调1中点值修正
 #define ESC_OFFSET_8 -30	//电调1中点值修正
 
-#define KI //积分常量
+//定义积分常亮
+#define KI
+//定义传感器四元数
+#define QURT0 (this->sensor.sensorRaw.bodyQuaternion.q[0]);
+#define QURT1 (this->sensor.sensorRaw.bodyQuaternion.q[1]);
+#define QURT2 (this->sensor.sensorRaw.bodyQuaternion.q[2]);
+#define QURT3 (this->sensor.sensorRaw.bodyQuaternion.q[3]);
+
+#define q30  1073741824.0f
 
 //#define PERCISION 1000	//浮点与整型转换精确度
 //#define RC_PERCISION 12	//rc读取值的浮动范围

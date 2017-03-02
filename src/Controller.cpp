@@ -117,5 +117,3 @@ void ControlAllocator::process(DesireCondition d)
 	this->propData.fProp[6]=0.079246*d.fDes[0]+0.2957531*d.fDes[1]-0.2165063*d.fDes[2]+1.607354*d.tDes[0]+0.430689*d.tDes[1]+1.176664*d.tDes[2];
 	this->propData.fProp[7]=-0.295753*d.fDes[0]+0.0792468*d.fDes[1]+0.216506*d.fDes[2]-0.430689*d.tDes[0]+1.607354*d.tDes[1]-1.176664*d.tDes[2];
 }
-
-
